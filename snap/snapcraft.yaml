@@ -25,6 +25,8 @@ base: core18
 apps:
   zint-snap:
     command: usr/local/bin/zint-qt
+    command-chain:
+      - bin/desktop-launch
     plugs:
       - home
       - desktop
@@ -32,6 +34,7 @@ apps:
       - wayland
       - unity7
       - x11
+      - opengl
   cli:
     command: usr/local/bin/zint
 
@@ -60,22 +63,12 @@ parts:
       - libqt5svg5-dev
   
     stage-packages:
-      - dbus
-      - qttranslations5-l10n # common translations
       - zlib1g
       - libpng16-16
-      - libqt5core5a
       - libqt5concurrent5
       - libqt5dbus5
-      - libqt5gui5
-      - libqt5network5
-      - libqt5widgets5
-      - libqt5xml5
       - libqt5x11extras5
       - libqt5svg5
-      - libqt5webkit5
-      - qtwayland5
-      - libxcb1
 
   desktop-qt5:
       source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
