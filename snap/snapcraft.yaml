@@ -73,6 +73,8 @@ parts:
       - libqt5svg5
       - libqt5webkit5
       - qtwayland5
+      - libicu60
+      - libdouble-conversion1
       - libxcb1
       - libxcb-xv0
       - libxcb-xkb1
