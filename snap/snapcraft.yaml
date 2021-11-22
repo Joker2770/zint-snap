@@ -63,6 +63,7 @@ parts:
       - zlib1g
       - libpng16-16
       - libqt5core5a
+      - libqt5concurrent5
       - libqt5dbus5
       - libqt5gui5
       - libqt5network5
@@ -70,7 +71,7 @@ parts:
       - libqt5xml5
       - libqt5x11extras5
       - libqt5svg5
-      - libqt5concurrent5
+      - libqt5webkit5
       - qtwayland5
       - libxcb1
       - libxcb-xv0
