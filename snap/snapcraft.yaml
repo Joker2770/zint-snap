@@ -62,12 +62,21 @@ parts:
     stage-packages:
       - zlib1g
       - libpng16-16
+      - libqt5core5a
+      - libqt5dbus5
+      - libqt5gui5
+      - libqt5network5
+      - libqt5widgets5
+      - libqt5xml5
       - libqt5x11extras5
       - libqt5svg5
-      - libqt5dbus5
       - libqt5concurrent5
       - qtwayland5
       - libxcb1
+      - libxcb-xv0
+      - libxcb-xkb1
+      - libxcb-util1
+      - libxcb-xinerama0
 
   desktop-qt5:
       source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
