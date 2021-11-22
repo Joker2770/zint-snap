@@ -60,8 +60,10 @@ parts:
       - make
       - zlib1g-dev
       - libpng-dev
+      - libegl-dev
   
     stage-packages:
       - zlib1g
       - libpng16-16
+      - libegl1
 
