@@ -60,6 +60,8 @@ parts:
       - libqt5svg5-dev
   
     stage-packages:
+      - dbus
+      - qttranslations5-l10n # common translations
       - zlib1g
       - libpng16-16
       - libqt5core5a
@@ -73,13 +75,7 @@ parts:
       - libqt5svg5
       - libqt5webkit5
       - qtwayland5
-      - libicu60
-      - libdouble-conversion1
       - libxcb1
-      - libxcb-xv0
-      - libxcb-xkb1
-      - libxcb-util1
-      - libxcb-xinerama0
 
   desktop-qt5:
       source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
