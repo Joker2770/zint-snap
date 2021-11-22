@@ -40,7 +40,7 @@ parts:
       - "-DKDE_SKIP_TEST_SETTINGS=ON"
     source: https://git.code.sf.net/p/zint/code
     source-type: git
-    source-branch: main
+    source-branch: master
     source-depth: 1
     build-snaps:
       - kde-frameworks-5-core18-sdk
