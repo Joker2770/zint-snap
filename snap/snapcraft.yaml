@@ -53,6 +53,7 @@ parts:
       - make
       - zlib1g-dev
       - libpng-dev
+      - qt5-default
   
     stage-packages:
       - zlib1g
