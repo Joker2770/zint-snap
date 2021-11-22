@@ -62,6 +62,7 @@ parts:
     stage-packages:
       - zlib1g
       - libpng16-16
+      - libqt5dbus5
 
   desktop-qt5:
       source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
