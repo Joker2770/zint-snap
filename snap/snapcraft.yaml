@@ -60,10 +60,14 @@ parts:
       - make
       - zlib1g-dev
       - libpng-dev
-      - libegl-dev
+      - try:
+        - libegl-dev
+        - libegl1-mesa-dev
   
     stage-packages:
       - zlib1g
       - libpng16-16
-      - libegl1
+      - try:
+        - libegl1
+        - libegl-mesa0
 
