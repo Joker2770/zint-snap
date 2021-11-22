@@ -48,6 +48,7 @@ parts:
       - "-DENABLE_TESTING=OFF"
       - "-DBUILD_TESTING=OFF"
       - "-DKDE_SKIP_TEST_SETTINGS=ON"
+      - "-DCMAKE_FIND_ROOT_PATH=/snap/kde-frameworks-5-core18-sdk/current"
     source: https://git.code.sf.net/p/zint/code
     source-type: git
     source-branch: master
