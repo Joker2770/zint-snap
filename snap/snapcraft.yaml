@@ -36,7 +36,6 @@ apps:
       - x11
       - opengl
       - removable-media
-      - personal-files
   cli:
     command: usr/local/bin/zint
 
