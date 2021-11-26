@@ -2,13 +2,13 @@ name: zint-snap # you probably want to 'snapcraft register <name>'
 version: '2.10.0.9' # just for humans, typically '1.2+git' or '1.3.2'
 summary: A barcode encoding tool supporting over 50 symbologies. # 79 char long summary
 description: |
-  Encodes data into any of the following: Australia Post barcode, Aztec Code, Aztec Runes
-  , Channel Code, Codabar, Codablock-F, Code 11, Code 128, Code 16K, Code 2 of 5 
-  (Including IATA, Datalogic, ITF14, Deutsche Post Leitcode and Identcode), 
-  Code 32 (Italian Pharmacode), Code 39, Code 39+, Code 49, Code 93, 
-  Code One, Data Matrix (including DMRE), DotCode, Dutch Post KIX, EAN, 
-  Grid Matrix, GS-1 DataBar (including stacked and composite symbols), 
-  Han Xin, HIBC, Japan Post, Korea Post, LOGMARS, MaxiCode, MSI, PDF417 and Micro PDF417, 
+  Encodes data into any of the following: Australia Post barcode, Aztec Code, 
+  Aztec Runes, Channel Code, Codabar, Codablock-F, Code 11, Code 128, Code 16K, 
+  Code 2 of 5 (Including IATA, Datalogic, ITF14, Deutsche Post Leitcode and Identcode), 
+  Code 32 (Italian Pharmacode), Code 39, Code 39+, Code 49, Code 93, Code One, 
+  Data Matrix (including DMRE), DotCode, Dutch Post KIX, EAN, Grid Matrix, 
+  GS-1 DataBar (including stacked and composite symbols), Han Xin, HIBC, 
+  Japan Post, Korea Post, LOGMARS, MaxiCode, MSI, PDF417 and Micro PDF417, 
   Pharmacode, POSTNET, PLANET, QR Code and Micro QR, Royal Mail 4-state (RM4SCC) 
   and Mailmark, Telepen, Ultracode, UPC-A, UPC-E, UPNQR and USPS Intelligent Mail.
 
@@ -25,6 +25,8 @@ base: core18
 layout:
   /etc/fonts:
     bind: $SNAP/etc/fonts
+  /usr/share/X11:
+    bind: $SNAP/usr/share/X11
 
 apps:
   zint-snap:
