@@ -44,6 +44,9 @@ apps:
       - removable-media
   cli:
     command: usr/local/bin/zint
+    plugs:
+      - home
+      - removable-media
 
 parts:
   zint-snap:
