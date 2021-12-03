@@ -42,6 +42,8 @@ apps:
       - x11
       - opengl
       - removable-media
+    environment:
+      DISABLE_WAYLAND: 1
   cli:
     command: usr/local/bin/zint
     plugs:
