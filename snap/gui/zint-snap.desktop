@@ -9,4 +9,4 @@ Terminal=false
 Type=Application
 Categories=Utility;
 Keywords=barcode;studio;
-Icon=${SNAP}/meta/gui/zint-qt.png
+Icon=${SNAP}/meta/gui/zint-snap.png
