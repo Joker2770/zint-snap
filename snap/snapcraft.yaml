@@ -43,6 +43,8 @@ layout:
     bind: $SNAP/etc/fonts
   /usr/share/X11:
     bind: $SNAP/usr/share/X11
+  /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gtk-2.0/modules:
+    bind: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gtk-2.0/modules
 
 apps:
   zint-snap:
