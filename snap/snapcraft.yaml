@@ -128,4 +128,5 @@ parts:
     plugin: nil
     stage-packages:
       - qt5-gtk-platformtheme
+      - libcanberra-gtk-module
 
