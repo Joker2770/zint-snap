@@ -45,6 +45,20 @@ layout:
     bind: $SNAP/usr/share/X11
   /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gtk-2.0/modules:
     bind: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gtk-2.0/modules
+  ~/.Public:
+    bind: $HOME/.Public
+  ~/.zint.bmp:
+    bind-file: $HOME/.zint.bmp
+  ~/.zint.svg:
+    bind-file: $HOME/.zint.svg
+  ~/.zint.png:
+    bind-file: $HOME/.zint.png
+  ~/.zint.emf:
+    bind-file: $HOME/.zint.emf
+  ~/.zint.gif:
+    bind-file: $HOME/.zint.gif
+  ~/.zint.tif:
+    bind-file: $HOME/.zint.tif
 
 apps:
   zint-snap:
