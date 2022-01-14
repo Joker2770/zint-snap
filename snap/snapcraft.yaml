@@ -37,22 +37,6 @@ plugs:
     interface: content
     target: $SNAP/data-dir/sounds
     default-provider: gtk-common-themes
-  dot-zint:
-    interface: personal-files
-    read:
-      - $HOME/.zint.bmp
-      - $HOME/.zint.svg
-      - $HOME/.zint.png
-      - $HOME/.zint.emf
-      - $HOME/.zint.gif
-      - $HOME/.zint.tif
-    write:
-      - $HOME/.zint.bmp
-      - $HOME/.zint.svg
-      - $HOME/.zint.png
-      - $HOME/.zint.emf
-      - $HOME/.zint.gif
-      - $HOME/.zint.tif
 
 layout:
   /etc/fonts:
@@ -77,7 +61,6 @@ apps:
       - opengl
       - removable-media
       - gsettings
-      - dot-zint
     environment:
       DISABLE_WAYLAND: 1
       XDG_DATA_DIRS: $SNAP/share:$XDG_DATA_DIRS
