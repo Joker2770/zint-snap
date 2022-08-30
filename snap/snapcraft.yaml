@@ -1,5 +1,5 @@
 name: zint-snap # you probably want to 'snapcraft register <name>'
-version: '2.11.0.9' # just for humans, typically '1.2+git' or '1.3.2'
+version: '2.11.1.9' # just for humans, typically '1.2+git' or '1.3.2'
 summary: A barcode encoding tool supporting over 50 symbologies. # 79 char long summary
 description: |
   Encodes data into any of the following: Australia Post barcode, Aztec Code, 
@@ -16,7 +16,7 @@ description: |
   FNC1 character insertion in GS1 mode. Save to PNG, BMP, TIF, GIF, PCX, 
   SVG, WMF and EPS. Includes CLI, GUI and API for calling from other applications.
 
-# icon: gui/icon.png
+  _More build details: https://github.com/Joker2770/zint-snap _
 
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
@@ -42,6 +42,8 @@ plugs:
 layout:
   /etc/fonts:
     bind: $SNAP/etc/fonts
+  /usr/local/share:
+    bind: $SNAP/usr/local/share
   /usr/share/X11:
     bind: $SNAP/usr/share/X11
   /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gtk-2.0/modules:
@@ -56,6 +58,7 @@ apps:
       - home
       - desktop
       - desktop-legacy
+      - audio-playback
       - wayland
       - unity7
       - x11
@@ -145,4 +148,7 @@ parts:
       - -README*
       - -LICENSE
       - -snap
+    override-build: |
+      snapcraftctl build
+      chmod +x launcher.sh
 
