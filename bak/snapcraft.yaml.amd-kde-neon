@@ -20,7 +20,7 @@ description: |
 
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
-base: core18
+base: core20
 license: 'GPL-3.0+'
 architectures:
   - build-on: amd64
@@ -68,9 +68,6 @@ parts:
     source-type: git
     source-branch: master
     source-depth: 1
-    build-snaps:
-      - kde-frameworks-5-core18-sdk
-      - kde-frameworks-5-core18
     build-packages:
       - gcc
       - make
