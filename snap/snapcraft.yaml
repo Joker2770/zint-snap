@@ -36,8 +36,6 @@ layout:
 apps:
   zint-snap:
     command: usr/local/bin/launcher.sh
-    command-chain:
-      - bin/desktop-launch
     extensions: [kde-neon]
     plugs:
       - home
@@ -74,7 +72,6 @@ parts:
     source-depth: 1
     build-snaps:
       - kde-frameworks-5-core18-sdk
-      - kde-frameworks-5-core18
     build-packages:
       - gcc
       - make

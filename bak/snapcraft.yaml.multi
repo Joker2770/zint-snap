@@ -22,6 +22,12 @@ grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 base: core18
 license: 'GPL-3.0+'
+architectures:
+  - build-on: i386
+  - build-on: armhf
+  - build-on: arm64
+  - build-on: ppc64el
+  - build-on: s390x
 
 plugs:
   # Support for common GTK themes
