@@ -30,6 +30,8 @@ layout:
     bind: $SNAP/etc/fonts
   /usr/local/share:
     bind: $SNAP/usr/local/share
+  /usr/local/lib:
+    bind: $SNAP/usr/local/lib
 
 apps:
   zint-snap:
