@@ -66,12 +66,15 @@ apps:
       - removable-media
       - gsettings
     environment:
+      LD_LIBRARY_PATH: "$LD_LIBRARY_PATH:$SNAP/usr/local/lib"
       DISABLE_WAYLAND: 1
       XDG_DATA_DIRS: $SNAP/share:$XDG_DATA_DIRS
       # Use GTK3 cursor theme, icon theme and open/save file dialogs.
       QT_QPA_PLATFORMTHEME: gtk3
   cli:
     command: usr/local/bin/zint
+    environment:
+      LD_LIBRARY_PATH: "$LD_LIBRARY_PATH:$SNAP/usr/local/lib"
     plugs:
       - home
       - removable-media
@@ -82,6 +85,8 @@ parts:
     plugin: cmake
     configflags:
       - "-DCMAKE_INSTALL_PREFIX=/usr/local"
+      - "-DCMAKE_C_COMPILER=/usr/bin/gcc"
+      - "-DCMAKE_CXX_COMPILER=/usr/bin/g++"
       - "-DCMAKE_BUILD_TYPE=Release"
       - "-DENABLE_TESTING=OFF"
       - "-DBUILD_TESTING=OFF"
@@ -91,6 +96,7 @@ parts:
     source-depth: 1
     build-packages:
       - gcc
+      - g++
       - make
       - zlib1g-dev
       - libpng-dev
